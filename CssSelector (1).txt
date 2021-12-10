@@ -1,0 +1,55 @@
+CSS Selector By id: (#)
+
+<input name="txtUsername" id="txtUsername" type="text">
+
+"input#txtUsername" ----> CSS Selector
+driver.findElement(By.cssSelector("input#txtUsername")).
+
+----------------------------------------------------------------
+CssSelector By Class:(.)
+
+<input type="submit" name="Submit" class="button" id="btnLogin" value="LOGIN">
+
+input.button
+
+----------------------------------------------------------------
+CssSelector By Attributes:
+
+<input name="txtUsername" id="txtUsername" type="text">
+
+input("[id='txtUsername']")
+
+
+
+
+---------------------------------------------------------------
+
+SubString
+
+<input name="txtUsername" id="txtUsername" type="text">
+
+id=txtUsername123
+id=txtUsername234
+id=txtUsername345
+
+^ --- "input[id^='txtUser']" --- Prefix is constant
+
+<input name="txtPassword" id="txtPassword" autocomplete="off" type="password">
+
+
+id="txtPassword"
+id="txt1Password"
+id="txt2Password"
+
+
+$ -- ("input[id$='Password']"))
+
+
+<input type="submit" name="Submit" class="button" id="btnLogin" value="LOGIN">
+
+* ----> Partial Value of the webelement (Object Property)
+
+("input[id*='Login']"))
+
+----------------------------------------------------------------
+
